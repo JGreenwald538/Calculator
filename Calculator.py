@@ -67,7 +67,8 @@ elif op == "power":
     if num1 == "pi":
         num1 = math.pi
     num3 = math.pow(float(num1), float(num2))
-    print(str(num1) + "^" + str(num2) + " = " + str(num3))
+    SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+    print(str(num1) + str(num2).translate(SUP) + " = " + str(num3))
 elif op == "sqrt":
     num1 = (input("Enter a number:"))
     if num1 == "e":
@@ -83,15 +84,16 @@ elif op == "exp":
     if num1 == "pi":
         num1 = math.pi
     num2 = math.exp(float(num1))
-    print("e to the " + str(num1) + " power is " + str(num2))
+    SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+    print("e" + num1.translate(SUP) + " is " + str(num2))
 elif op == "log":
     num1 = (input("Enter the constant number:"))
     if num1 == "e":
         num1 = math.e
     if num1 == "pi":
         num1 = math.pi
-    num3 = math.log(float(num1))
-    print("e to the " + str(num3) + " power gets you " + str(num1))
+    num2 = math.log(float(num1))
+    print("e to the " + str(num2) + " power gets you " + str(num1))
 elif op == "log2":
     num1 = (input("Enter the constant number:"))
     if num1 == "e":
@@ -205,7 +207,8 @@ while repeat == "Yes":
         if num1 == "pi":
             num1 = math.pi
         num3 = math.pow(float(num1), float(num2))
-        print(str(num1) + "^" + str(num2) + " = " + str(num3))
+        SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+        print(str(num1) + str(num2).translate(SUP) + " = " + str(num3))
     elif op == "sqrt":
         num1 = (input("Enter a number:"))
         if num1 == "e":
@@ -221,7 +224,8 @@ while repeat == "Yes":
         if num1 == "pi":
             num1 = math.pi
         num2 = math.exp(float(num1))
-        print("e to the " + str(num1) + " power is " + str(num2))
+        SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+        print("e" + num1.translate(SUP) + " is " + str(num2))
     elif op == "log":
         num1 = (input("Enter the constant number:"))
         if num1 == "e":
