@@ -142,6 +142,22 @@ elif op == "slope":
     num2 = (input("Enter y₂:"))
     num3 = (input("Enter x₁:"))
     num4 = (input("Enter x₂:"))
+    if num2 == "e":
+        num2 = math.e
+    if num2 == "pi":
+        num2 = math.pi
+    if num1 == "e":
+        num1 = math.e
+    if num1 == "pi":
+        num1 = math.pi
+    if num4 == "e":
+        num4 = math.e
+    if num4 == "pi":
+        num4 = math.pi
+    if num3 == "e":
+        num3 = math.e
+    if num3 == "pi":
+        num3 = math.pi
     num5 = float(num1)-float(num2)
     num6 = float(num3)-float(num4)
     num7 = num5/num6
@@ -151,6 +167,22 @@ elif op == "parallel":
     b = (input("B:"))
     num2 = (input("X:"))
     num3 = (input("Y:"))
+    if num2 == "e":
+        num2 = math.e
+    if num2 == "pi":
+        num2 = math.pi
+    if num1 == "e":
+        num1 = math.e
+    if num1 == "pi":
+        num1 = math.pi
+    if b == "e":
+        b = math.e
+    if b == "pi":
+        b = math.pi
+    if num3 == "e":
+        num3 = math.e
+    if num3 == "pi":
+        num3 = math.pi
     num4 = float(num1)*float(num2)
     num5 = float(num3)-num4
     print("The line parallel to y=" + num1 + "x+" + b + " that goes through " + num2 + "," + num3 + " is y=" + num1 +
@@ -161,6 +193,26 @@ elif op == "perpendicular":
     b = (input("B:"))
     num3 = (input("X:"))
     num4 = (input("Y:"))
+    if num2 == "e":
+        num2 = math.e
+    if num2 == "pi":
+        num2 = math.pi
+    if num1 == "e":
+        num1 = math.e
+    if num1 == "pi":
+        num1 = math.pi
+    if b == "e":
+        b = math.e
+    if b == "pi":
+        b = math.pi
+    if num3 == "e":
+        num3 = math.e
+    if num3 == "pi":
+        num3 = math.pi
+    if num4 == "e":
+        num4 = math.e
+    if num4 == "pi":
+        num4 = math.pi
     num5 = float(num2)*-1
     num6 = float(num1)/float(num2)
     num7 = float(num3)*num6
@@ -311,6 +363,22 @@ while repeat == "Yes":
         num2 = (input("Enter y₂:"))
         num3 = (input("Enter x₁:"))
         num4 = (input("Enter x₂:"))
+        if num2 == "e":
+            num2 = math.e
+        if num2 == "pi":
+            num2 = math.pi
+        if num1 == "e":
+            num1 = math.e
+        if num1 == "pi":
+            num1 = math.pi
+        if num3 == "e":
+            num3 = math.e
+        if num3 == "pi":
+            num3 = math.pi
+        if num4 == "e":
+            num4 = math.e
+        if num4 == "pi":
+            num4 = math.pi
         num5 = float(num1) - float(num2)
         num6 = float(num3) - float(num4)
         num7 = num5 / num6
@@ -320,6 +388,22 @@ while repeat == "Yes":
         b = (input("B:"))
         num2 = (input("X:"))
         num3 = (input("Y:"))
+        if num2 == "e":
+            num2 = math.e
+        if num2 == "pi":
+            num2 = math.pi
+        if num1 == "e":
+            num1 = math.e
+        if num1 == "pi":
+            num1 = math.pi
+        if b == "e":
+            b = math.e
+        if b == "pi":
+            b = math.pi
+        if num3 == "e":
+            num3 = math.e
+        if num3 == "pi":
+            num3 = math.pi
         num4 = float(num1) * float(num2)
         num5 = float(num3) - num4
         print(
@@ -331,6 +415,26 @@ while repeat == "Yes":
         b = (input("B:"))
         num3 = (input("X:"))
         num4 = (input("Y:"))
+        if num2 == "e":
+            num2 = math.e
+        if num2 == "pi":
+            num2 = math.pi
+        if num1 == "e":
+            num1 = math.e
+        if num1 == "pi":
+            num1 = math.pi
+        if b == "e":
+            b = math.e
+        if b == "pi":
+            b = math.pi
+        if num3 == "e":
+            num3 = math.e
+        if num3 == "pi":
+            num3 = math.pi
+        if num4 == "e":
+            num4 = math.e
+        if num4 == "pi":
+            num4 = math.pi
         num5 = float(num2) * -1
         num6 = float(num1) / float(num2)
         num7 = float(num3) * num6
