@@ -137,6 +137,36 @@ elif op == "tan":
     num2 = math.tan(float(num1))
     num3 = math.degrees(num2)
     print("The tangent of " + num1 + " is " + str(num2) + " in radians and " + str(num3) + " degrees")
+elif op == "slope":
+    num1 = (input("Enter y₁:"))
+    num2 = (input("Enter y₂:"))
+    num3 = (input("Enter x₁:"))
+    num4 = (input("Enter x₂:"))
+    num5 = float(num1)-float(num2)
+    num6 = float(num3)-float(num4)
+    num7 = num5/num6
+    print("The slope is " + str(num7))
+elif op == "parallel":
+    num1 = (input("Slope:"))
+    b = (input("B:"))
+    num2 = (input("X:"))
+    num3 = (input("Y:"))
+    num4 = float(num1)*float(num2)
+    num5 = float(num3)-num4
+    print("The line parallel to y=" + num1 + "x+" + b + " that goes through " + num2 + "," + num3 + " is y=" + num1 +
+          "x+" + str(num5))
+elif op == "perpendicular":
+    num1 = (input("Numerator of Slope:"))
+    num2 = (input("Denominator of Slope:"))
+    b = (input("B:"))
+    num3 = (input("X:"))
+    num4 = (input("Y:"))
+    num5 = float(num2)*-1
+    num6 = float(num1)/float(num2)
+    num7 = float(num3)*num6
+    num8 = float(num4)-num7
+    print("The line perpendicular to y=" + str(num6) + "x+" + b + " that runs through " + num3 + "," + num4 + " is y=" +
+          str(num5) + "/" + num1 + "+" + str(num8))
 else:
     print("Invalid Operator")
 
@@ -276,6 +306,38 @@ while repeat == "Yes":
         num2 = math.tan(float(num1))
         num3 = math.degrees(num2)
         print("The tangent of " + num1 + " is " + str(num2) + " in radians and " + str(num3) + " degrees")
+    elif op == "slope":
+        num1 = (input("Enter y₁:"))
+        num2 = (input("Enter y₂:"))
+        num3 = (input("Enter x₁:"))
+        num4 = (input("Enter x₂:"))
+        num5 = float(num1) - float(num2)
+        num6 = float(num3) - float(num4)
+        num7 = num5 / num6
+        print("The slope is " + str(num7))
+    elif op == "parallel":
+        num1 = (input("Slope:"))
+        b = (input("B:"))
+        num2 = (input("X:"))
+        num3 = (input("Y:"))
+        num4 = float(num1) * float(num2)
+        num5 = float(num3) - num4
+        print(
+            "The line parallel to y=" + num1 + "x+" + b + " that goes through " + num2 + "," + num3 + " is y=" + num1 +
+            "x+" + str(num5))
+    elif op == "perpendicular":
+        num1 = (input("Numerator of Slope:"))
+        num2 = (input("Denominator of Slope:"))
+        b = (input("B:"))
+        num3 = (input("X:"))
+        num4 = (input("Y:"))
+        num5 = float(num2) * -1
+        num6 = float(num1) / float(num2)
+        num7 = float(num3) * num6
+        num8 = float(num4) - num7
+        print("The line perpendicular to y=" + str(
+            num6) + "x+" + b + " that runs through " + num3 + "," + num4 + " is y=" +
+              str(num5) + "/" + num1 + "+" + str(num8))
     else:
         print("Invalid Operator")
     repeat = input("Would you like to repeat?:")
